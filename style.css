@@ -15,6 +15,7 @@ body {
 .topheader {
   background-color: #1346a8;
   height: 40px;
+  display: flex;
   width: 100%;
 }
 .topheader p {
@@ -763,6 +764,14 @@ margin-right: 5px;
 .testi-pd{
   padding-top: 6.5rem;
 }
+footer{
+  background-image: url('./assets/images/footer.png');
+  background-position: bottom right;
+  background-repeat: no-repeat;
+  background-size: auto;
+  opacity: 1;
+  transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+}
 @media only screen and (min-width: 992px) {
   .card-only-desktop {
     position: relative;
@@ -787,5 +796,10 @@ margin-right: 5px;
   }
   .nav-margin2 {
     margin-right: 70px;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .topheader {
+    display: none;
   }
 }
